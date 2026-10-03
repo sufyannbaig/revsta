@@ -1,0 +1,28 @@
+{
+  "name": "Keyword",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "count": {
+      "type": "number",
+      "default": 1
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": [
+        "positive",
+        "negative"
+      ]
+    }
+  },
+  "required": [
+    "product_id",
+    "keyword",
+    "sentiment"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "ProductRequest",
+  "type": "object",
+  "properties": {
+    "product_name": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Smart Phones",
+        "Earbuds",
+        "Smart Watches",
+        "Laptops",
+        "Tablets",
+        "Accessories"
+      ],
+      "default": "Smart Phones"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "product_name"
+  ]
+}

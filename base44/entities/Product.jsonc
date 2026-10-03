@@ -1,0 +1,64 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Smart Phones",
+        "Earbuds",
+        "Smart Watches",
+        "Laptops",
+        "Tablets",
+        "Accessories"
+      ],
+      "default": "Smart Phones"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "sentiment_score": {
+      "type": "number"
+    },
+    "positive_pct": {
+      "type": "number"
+    },
+    "neutral_pct": {
+      "type": "number"
+    },
+    "negative_pct": {
+      "type": "number"
+    },
+    "total_reviews": {
+      "type": "number"
+    },
+    "trending": {
+      "type": "boolean",
+      "default": false
+    },
+    "top_rated": {
+      "type": "boolean",
+      "default": false
+    },
+    "affiliate_url": {
+      "type": "string"
+    },
+    "ai_summary": {
+      "type": "string"
+    },
+    "last_scraped_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "name",
+    "brand"
+  ]
+}
